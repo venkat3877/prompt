@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Prompt</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: cornsilk;
+            text-align: center;
+        }
+        button:hover{
+            background-color: aqua;
+        }
+        button{
+            font-size: 20px;
+            font-style: italic;
+        }
+        input{
+            margin-top: 10px;
+            width: 300px;
+        }
+        h2:hover{
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Displaying text from user input</h2>
+    <button onclick="display()">Click me to enter the text</button>
+    <br>
+    <input type="text" id="textbox">
+    <script>
+        function display(){
+            let text=prompt("Enter Anything")
+            let box=document.getElementById('textbox')
+            box.value=text
+        }
+
+    </script>
+</body>
+</html>
